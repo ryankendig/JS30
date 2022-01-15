@@ -10,6 +10,13 @@
       let age = 100;
       let age2 = age;
 
+      age = 200;
+
+      let name = "Ryan";
+      let name2 = name;
+
+      name = "Ry";
+
       // Let's say we have an array
       const players = ["Wes", "Sarah", "Ryan", "Poppy"];
 
@@ -74,6 +81,19 @@
       // We will hopefully soon see the object ...spread
 
       // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+
+      const ryan = {
+        name: "Ryan",
+        age: 32,
+        social: {
+          twitter: "@handsome_molly",
+          ig: "@d1gthis",
+        },
+      };
+
+      const dev = Object.assign({}, ryan);
+
+      dev.name = "Sweet P";
     </script>
   </body>
 </html>
