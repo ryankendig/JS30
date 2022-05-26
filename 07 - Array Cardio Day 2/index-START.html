@@ -64,8 +64,11 @@
       console.log(commentIndex);
 
       // delete the comment with the ID of 823423
-
-      // comments.splice(index, 1);
+      const newComments = [
+        ...comments.slice(0, commentIndex),
+        ...comments.slice(commentIndex + 1),
+      ];
+      // comments.splice(commentIndex, 1);
     </script>
   </body>
 </html>
